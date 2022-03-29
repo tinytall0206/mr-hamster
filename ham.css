@@ -430,7 +430,7 @@
            height: 100vh;
            position: relative;
        }
-       .sub-title::before{
+       /* .sub-title::before{
            content: "";
            background:#f4d84cfa;
            width: 95px;
@@ -439,8 +439,18 @@
            top: 321.5vh;
            left: 690px;
            z-index: -20;
+       } */
+       .simple-step{
+           display: flex;
+           
        }
-       
+       .sub-title-fake{
+            width: 95px;
+            height: 15px;
+            background:#f4d84cfa;
+            transform: translate(-83px, 20px);
+            z-index: -20;
+       }
        .step-into{
            width: 1200px;
            margin: auto;
