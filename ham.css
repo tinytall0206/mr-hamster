@@ -801,6 +801,9 @@
     padding-top: 50px;
     padding-left: 225px;
 }
+.pickup-right{
+    width: calc(100vh - 490px);
+}
 .pickup-right-top{
     display: flex;
     align-items: baseline;
