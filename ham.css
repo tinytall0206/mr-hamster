@@ -436,10 +436,11 @@
            width: 95px;
            height: 15px;
            position: absolute;
-           top: 325.5vh;
-           left: 668px;
+           top: 321.5vh;
+           left: 690px;
            z-index: -20;
        }
+       
        .step-into{
            width: 1200px;
            margin: auto;
