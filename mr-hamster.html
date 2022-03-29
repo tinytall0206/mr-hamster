@@ -72,7 +72,7 @@
                 </ul>
             </div>
         </div>
-        <div class="slider-dot-all li">
+        <div class="slider-dot-all">
             <ul>
                 <a href="#nav"><li></li></a>
                 <a href="#introduction"><li></li></a>
@@ -577,7 +577,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
+<script>
+    $('.slider-dot-all li').click(function(){
+        console.log('nihao');
+        $(this).css('background','#8C6A5C').parent().siblings().children().css('background','transparent')
+    })
+</script>
 
 <!-- 首頁banner -->
     <script>
@@ -607,21 +612,22 @@
         setInterval(moveRight, 2500);
     </script>
 
-<script>
+<!-- <script>
     var section = 0;
 
     $('.slider-dot-all li').click(function(){
         console.log('hello' ,$(this));
         section = $(this).index();
 
+        
+
         sectionUpdate();
 
     function sectionUpdate(){
-        $('.slider-dot-all li').eq(section).css('background', '#8C6A5C')
-        siblings().css('background','transparent')
+        $('.slider-dot-all li').eq(section).css('background', 'transparent').parent().siblings().css('background','transparent')
     }    
     })
-</script>
+</script> -->
 
 <!-- 顏色切換 -->
     <script>
