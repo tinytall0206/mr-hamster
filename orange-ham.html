@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @font-face {
+            font-family:'naikai';
+            src: url(./font/NaikaiFont-Regular.ttf)  format("truetype");
+                
+        }
+        body {
+            
+            background:#FEF9E2;
+        }
+        *{
+            font-family: 'naikai' ;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .nav{
+            position: relative;
+        }
+        .nav-top{
+            width: 100%;
+            height:100px;
+            background: #EF7B28;
+        }
+        .nav-oral{
+            width: 300px;
+            height: 120px;
+            background: #FEF9E2;
+            border-radius: 150px / 60px;
+            margin: auto;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -40%);
+        }
+        .nav-rice{
+            width: 100%;
+            height: 120px;
+            background: #FEF9E2;
+            text-align: center;
+        }
+        .nav-title{
+            font-size: 70px;
+            color: black;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 32%);
+            color: #733438;
+            
+            letter-spacing: 5px;
+        }
+        .oral-title img{
+            /* outline: 1px solid red; */
+            width: 80%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -15%);
+
+        }
+        .nav-bottom{
+            width: 100%;
+            height: 100px;
+            background: #EF7B28;
+        }
+        .nav-btn{
+            padding-top: 28px;
+        }
+        .nav-btn ul{
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            
+        }
+        .nav-btn li{
+           
+            background: #ffffff;
+            border: 1px solid #000000;
+            border-radius: 33px;
+            padding: 10px 20px;
+        }
+
+        .nav-btn a{
+            text-decoration: none;
+            color: white ;
+            font-size: 20px;
+        }
+        .real-btn a{
+            color: #733438;
+        }
+        .real-btn{
+            transform: translateY(-48px);
+        }
+        .real-btn li{
+            
+            background: #FEF9E2;
+            border: 1px solid #000000;
+            border-radius: 33px;
+            padding: 10px 20px;
+            transition: .2s;
+        }
+        .real-btn li:hover{
+            transform: translateY(6px);
+            background: #F4D74C;
+            color: #000000;
+        }
+        .banner{
+            display: flex;
+            justify-content: space-between;
+        }
+        .landing-left{
+            width: 360px;
+            height: calc(100vh - 320px);
+            background:#ffff;
+        }
+        .landing-right{
+            width: 360px;
+            height: calc(100vh - 320px);
+            background:#ffff;
+        }
+
+        .banner-wall{
+            width: 360px;
+            height: 360px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 110px;
+        }
+        ul.train{
+            width: 300%;
+            transform: translateX(0px);
+            display: flex;
+        }
+        
+            
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-top"></div>
+        <div class="nav-oral">
+            <div class="oral-title">
+                <img src="/img/title.png" alt="">
+            </div>
+        </div>
+            
+        <div class="nav-rice">
+            <div class="nav-title">倉鼠先生</div>
+        </div>
+        <div class="nav-bottom">
+            <div class="nav-btn">
+                <ul>
+                    <a href=""><li>倉鼠介紹</li></a>
+                    <a href=""><li>客製化鼠籠</li></a>
+                    <a href=""><li>線上訂購</li></a>
+                    <a href=""><li>面交自取</li></a>
+                </ul>
+                <ul class="real-btn">
+                    <a href=""><li class="yellow">倉鼠介紹</li></a>
+                    <a href=""><li>客製化鼠籠</li></a>
+                    <a href=""><li>線上訂購</li></a>
+                    <a href=""><li>面交自取</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>    
+    <div class="banner">
+        <div class="landing-left">
+            <div class="banner-wall">
+                <ul class="train">
+                    <li><img src="img/b8.png" alt=""></li>
+                    <li><img src="img/b22.png" alt=""></li>
+                    <li><img src="img/b3.png" alt=""></li>
+                    <li><img src="img/b4.png" alt=""></li>
+                    <li><img src="img/b5.png" alt=""></li>
+                    <li><img src="img/b6.png" alt=""></li>
+                    <li><img src="img/b7.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="landing-right">
+        </div>
+    </div>
+
+    <script src="/jquery-3.6.0.min.js"></script>
+    <script>
+        var page = 0;
+
+        function pageUpdate(){
+            $('ul.train').css('transition', '.5s').css('transform',`translateX(${page *-360}px)`)
+        }
+
+        function pageUpdateWithoutTransition(){
+            $('ul.train').css('transition', 'none').css('transform',`translateX(${page *-360}px)`)
+        }
+
+        function moveRight() {
+            page++
+            pageUpdate();
+            if (page >=3){
+                $('ul.train').one('transitionend', function(){
+                    console.log('hi');
+                    page=0
+                    pageUpdateWithoutTransition()
+                })
+            }
+            console.log('page', page);
+        }
+
+        setInterval(moveRight, 2000);
+    </script>
+    
+</body>
+</html>

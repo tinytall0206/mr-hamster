@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .nav{
+            width: 100%;
+            height: 80px;
+            background: #EB544C;
+        }
+        .logo{
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .contain{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .nav-btn{
+            margin-top: 20px;
+        }
+        .nav-btn ul{
+            display: flex;
+        }
+        .nav-btn li{
+            margin-right: 28px;
+            background: #ffffff;
+            border: 1px solid #000000;
+            border-radius: 33px;
+            padding: 10px 12px;
+        }
+        .nav-btn a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        .real-btn li{
+            margin-right: 28px;
+            background: #9DC3E6;
+            border: 1px solid #000000;
+            border-radius: 33px;
+            padding: 10px 12px;
+            transform: translateY(-48px);
+            transition: .2s;
+        }
+        .real-btn a{
+            color: #000000;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .real-btn .pink:hover{
+            background: #F4C4D2;
+            transform: translateY(-43px);
+        }
+        .real-btn .green:hover{
+            background: #B3DBDB;
+            transform: translateY(-43px);
+        }
+        .index-box {
+            height: calc(100vh - 80px);
+            
+        }
+        .door-top{
+            display: flex;
+            justify-content: space-between;
+        }
+        .door-left{
+            width: 400px;
+            height: 625px;
+            background: #9DC3E6;
+            
+        }
+        .door-center{
+            width: 720px;
+            height: 625px;
+            background: #B3DBDB;
+            font-size: 125px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            color: #2b2b2b;
+            display: flex;
+            align-items: center;
+            letter-spacing: 10px;
+        }
+        .door-right{
+            width: 400px;
+            height: 625px;
+            background: #F4C4D2;
+        }
+        .door-bottom{
+            display: flex;
+            
+        }
+        .bottom-left{
+            width: 400px;
+            
+            background: #F4C4D2;
+            
+        }
+        .bottom-center{
+            width: 720px;
+            background: #EB544C;
+            font-size: 120px;
+            color: #ffffff;
+            text-align: center;
+            letter-spacing: 20px;
+            font-weight: bold;
+            
+        }
+        .bottom-right{
+            width: 400px;
+            
+            background: #9DC3E6;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="contain">
+            <div class="logo">倉鼠先生</div>
+            <div class="nav-btn">
+                <ul>
+                    <a href=""><li>倉鼠介紹</li></a>
+                    <a href=""><li>客製化鼠籠</li></a>
+                    <a href=""><li>線上訂購</li></a>
+                    <a href=""><li>面交自取</li></a>
+                </ul>
+
+                <ul class="real-btn">
+                    <a href=""><li class="pink">倉鼠介紹</li></a>
+                    <a href=""><li class="green">客製化鼠籠</li></a>
+                    <a href=""><li class="pink">線上訂購</li></a>
+                    <a href=""><li class="green">面交自取</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="index-box">
+        <div class="door-top">
+            <div class="door-left">
+            </div>
+            <div class="door-center">
+                MR. <br> HAMSTER
+            </div>
+            <div class="door-right"></div>
+        </div>
+        <div class="door-bottom">
+            <div class="bottom-left"></div>
+            <div class="bottom-center">
+                倉鼠先生
+            </div>
+            <div class="bottom-right"></div>
+        </div>
+    </div>
+</body>
+</html>
