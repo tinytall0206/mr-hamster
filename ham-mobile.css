@@ -223,11 +223,45 @@
     transform: translate(-60px, -18px);
 }
 .arrow{
-    top: 10%;
-    right: 5%;
-    font-size: 50px;
+    display: none;
 }
+.swiper{
+    display: block;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: -100px;
+  }
 
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+    width: 375px;
+    
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+  }
 /* ---pickup------------------------------- */
 .pickup-left{
     width: 140px;
