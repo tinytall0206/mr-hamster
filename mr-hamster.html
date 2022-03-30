@@ -40,7 +40,7 @@
                 </ul>
                 <div class="dropdown">
                     <button class="btn btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      menu
+                        <i class="fa-solid fa-bars"></i>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                       <button class="dropdown-item" type="button">倉鼠介紹</button>
@@ -670,9 +670,13 @@
                     <li></li>
                 </ul>
             </div>
+            
+
             <div class="arrow bg-animation pageRightBtn-area">
                 <i class="fa-solid fa-circle-arrow-right"></i>
             </div>
+            
+
         </div>
     </div>
     <div class="pickup" id="pickup">
@@ -708,8 +712,23 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352.56320992430346!2d121.49915248246072!3d25.14189160008852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ae4edaf01e41%3A0x45006779e1aa4f4!2z5a625qiC56aP5YyX5oqV5bqX!5e0!3m2!1szh-TW!2stw!4v1648483532722!5m2!1szh-TW!2stw" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
+                <div class="google-wrap-mobile">
+                    <div class="google-map no-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352.56320992430346!2d121.49915248246072!3d25.14189160008852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ae4edaf01e41%3A0x45006779e1aa4f4!2z5a625qiC56aP5YyX5oqV5bqX!5e0!3m2!1szh-TW!2stw!4v1648483532722!5m2!1szh-TW!2stw" width="377" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
+        
         </div>
+        <div class="pickup-left-bottom-mobile">
+                <div class="pickup-spot-mobile">自取地點: 家樂福北投店</div>
+                <div class="pickup-address-mobile">地址：台北市北投區中和街366號 </div>
+                <div class="pickup-notice-mobile">
+                    箱體體積較大 <br>
+                    無法放置於機車前踏板,
+                    還請多加留意 
+                </div>
+            </div>
     </div>
     <div class="footer">
         <div class="contain">
@@ -719,6 +738,7 @@
                     <div class="logo-sub">MR. HAMSTER</div>
                 </div>
                 <div class="footer-subtitle">客製化倉鼠整理箱</div>
+                <div class="footer-subtitle-mobile">MR.HAMSTER</div>
                 <div class="footer-link">
                     <div class="shopee">
                         <a href="https://shopee.tw/tsailinlin1118"><img src="./img/shopee.png" alt=""></a>
@@ -733,6 +753,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<!-- 切換頁點點 -->
 <script>
     $('.slider-dot-all li').click(function(){
         console.log('nihao');
@@ -767,23 +789,6 @@
 
         setInterval(moveRight, 2500);
     </script>
-
-<!-- <script>
-    var section = 0;
-
-    $('.slider-dot-all li').click(function(){
-        console.log('hello' ,$(this));
-        section = $(this).index();
-
-        
-
-        sectionUpdate();
-
-    function sectionUpdate(){
-        $('.slider-dot-all li').eq(section).css('background', 'transparent').parent().siblings().css('background','transparent')
-    }    
-    })
-</script> -->
 
 <!-- 顏色切換 -->
     <script>
@@ -838,6 +843,8 @@
         })
     </script>
 
-    
+
+
+
 </body>
 </html>

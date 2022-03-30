@@ -436,6 +436,7 @@
     margin-left: 20px;
 }
 /* -----order-------------------------------------- */
+       
        .order{
            width: 100%;
            height: 100vh;
@@ -797,10 +798,15 @@
             width: 100%;
         }
 /* ----pickup------------------------------------ */
+.google-wrap-mobile{
+    display: none;
+}
+.pickup-left-bottom-mobile{
+    display: none;
+}
 .pickup{
     display: flex;
     justify-content: flex-start;
-    
 }
 .pickup-left{
     width: 490px;
@@ -882,6 +888,9 @@
     color: #FEF9E2;
 }
 /* -----footer-------------------------------- */
+.footer-subtitle-mobile{
+    display: none;
+}
 .footer{
     width: 100%;
     height: 100px;
