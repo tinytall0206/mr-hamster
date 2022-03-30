@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="ham.css">
     <link rel="shortcut icon" href="img/ham-logo.ico" />
     <link rel="stylesheet" href="ham-mobile.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     
 </head>
 <body>
@@ -670,14 +674,24 @@
                     <li></li>
                 </ul>
             </div>
-            
+
             <div class="arrow bg-animation pageRightBtn-area">
                 <i class="fa-solid fa-circle-arrow-right"></i>
             </div>
             
 
         </div>
-
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/m-s1.PNG" alt=""></div>
+              <div class="swiper-slide"><img src="./img/m-s2.PNG" alt=""></div>
+              <div class="swiper-slide"><img src="./img/m-s3.PNG" alt=""></div>
+              <div class="swiper-slide"><img src="./img/m-s4.PNG" alt=""></div>
+              <div class="swiper-slide"><img src="./img/m-s5.PNG" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         
     </div>
     <div class="pickup" id="pickup">
@@ -844,7 +858,21 @@
         })
     </script>
 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
 </body>
