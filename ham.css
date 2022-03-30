@@ -17,6 +17,10 @@
             padding: 0;
             list-style: none;
         }
+/* ---nav--------------------------------------------- */
+        .dropdown{
+            display: none;
+        }
         .nav{
             position: relative;
             width: 100%;
@@ -25,9 +29,6 @@
             width: 100%;
             height:100px;
             background: #EF7B28;
-        }
-        .nav-m{
-            font-size: 100px;
         }
         .nav-oral{
             width: 300px;
@@ -174,6 +175,9 @@
             display: none;
         }
 /* -------------------introduction------------------------ */
+        .introduction-mobile{
+            display: none;
+        }
        .introduction{
            background:#FEF9E2;
            width: 100%;
