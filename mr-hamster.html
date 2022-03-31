@@ -17,7 +17,18 @@
     
 </head>
 <body>
-
+    <div class="amg1">
+        <div class="amos">
+            <strong>開幕慶!
+            </strong>
+            <div class="lottery-con">
+                <canvas id="zwhCanvas" width="280" height="400"></canvas>
+            </div>
+            <div class="text">
+                <a href="#" class="text1">X</a>
+            </div>
+        </div>  
+    </div>
     <div class="nav" id="nav">
         <div class="nav-top"></div>
         <div class="nav-oral">
@@ -891,6 +902,15 @@
         $(window).scroll(centerHandler); /*當網頁捲動時呼叫置中函式*/
         $(window).resize(centerHandler); /*當視窗縮放時呼叫置中函式*/
     </script>   
+<!-- 刮刮樂 -->
+
+
+<script>
+    $('.text').click(function(){
+        console.log('hi');
+        $('.amg1').addClass('hide');
+    })
+</script>
 
 </body>
 </html>
